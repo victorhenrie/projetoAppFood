@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppFood</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,300;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="top-bar">
+            <h1>AppFood</h1>
+            <p>Sua comida em 6 minutos</p>
+        </div>
+        <div class="space"></div>
+        <div class="food aliment">
+            <h2>Primeiro, seu prato</h2>
+            <div class="food-screen">
+                <div class="food-box" onclick="selectFood(this)">
+                    <img src="./assets/images/salada_yin_yang.jpg" alt="salada e batata frita">
+                    <strong>Salada Yin Yang</strong>
+                    <p>Um pouco de batata, um pouco de salada</p>
+                    <div class="price">
+                        <strong>R$ 14,90</strong>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+                <div class="food-box" onclick="selectFood(this)">
+                    <img src="./assets/images/salada_yin_yang.jpg" alt="salada e batata frita">
+                    <strong>Salada Yin Yang</strong>
+                    <p>Um pouco de batata, um pouco de salada</p>
+                    <div class="price">
+                        <strong>R$ 15,90</strong>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+                <div class="food-box" onclick="selectFood(this)">
+                    <img src="./assets/images/salada_yin_yang.jpg" alt="salada e batata frita">
+                    <strong>Salada Yin Yang</strong>
+                    <p>Um pouco de batata, um pouco de salada</p>
+                    <div class="price">
+                        <strong>R$ 16,90</strong>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="food drink">
+            <h2>Agora, sua bebida</h2>
+            <div class="food-screen">
+                <div class="food-box" onclick="selectDrink(this)">
+                    <img src="./assets/images/coquinha_gelada.png" alt="latinha de coca-cola">
+                    <strong>Coquinha gelada</strong>
+                    <p>Lata 350ml</p>
+                    <div class="price">
+                        <strong>R$ 4,90</strong>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+                <div class="food-box" onclick="selectDrink(this)">
+                    <img src="./assets/images/coquinha_gelada.png" alt="latinha de coca-cola">
+                    <strong>Coquinha zero gelada</strong>
+                    <p>Lata 350ml</p>
+                    <div class="price">
+                        <strong>R$ 4,80</strong>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+                <div class="food-box" onclick="selectDrink(this)">
+                    <img src="./assets/images/coquinha_gelada.png" alt="latinha de coca-cola">
+                    <strong>Coquinha com café gelada</strong>
+                    <p>Lata 350ml</p>
+                    <div class="price">
+                        <strong>R$ 5,00</strong>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="food dessert">
+            <h2>Por fim, sua sobremesa</h2>
+            <div class="food-screen">
+                <div class="food-box" onclick="selectDessert(this)">
+                    <img src="./assets/images/pudim.png" alt="prato de pudim">
+                    <strong>Pudim pequeno</strong>
+                    <p>Apenas pudim</p>
+                    <div class="price">
+                        <strong>R$ 7,90</strong>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+                <div class="food-box" onclick="selectDessert(this)">
+                    <img src="./assets/images/pudim.png" alt="prato de pudim">
+                    <strong>Pudim médio</strong>
+                    <p>Apenas pudim</p>
+                    <div class="price">
+                        <strong>R$ 8,90</strong>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+                <div class="food-box" onclick="selectDessert(this)">
+                    <img src="./assets/images/pudim.png" alt="prato de pudim">
+                    <strong>Pudim grande</strong>
+                    <p>Apenas pudim</p>
+                    <div class="price">
+                        <strong>R$ 9,90</strong>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="botton-bar">
+            <button class="button">Selecione os 3 itens para fechar o pedido</button>
+        </div>
+    </div>
+    <div class="container-confirm">
+        <div class="confirm-message">
+            <strong>Confirme seu pedido</strong>
+            <div class="itens">
+                <p class="food"></p>
+                <p class="drink"></p>
+                <p class="dessert"></p>
+                <strong class="total"></strong>
+            </div>
+            <button class="confirm-button"> Tudo certo, pode pedir!</button>
+            <button>Cancelar</button>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
