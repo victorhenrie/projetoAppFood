@@ -101,3 +101,55 @@ ion-icon {
 .selected ion-icon {
     display: block;
 }
+.container-confirm {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    z-index: 1;
+}
+.confirm-message {
+    width: 380px;
+    height: 360px;
+    font-size: 22px;
+    background-color: #50D074;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10vw;
+    padding: 21px;
+    box-sizing: border-box;
+    border-radius: 9px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+}
+.confirm-button {
+    border: none;
+    width: 329px;
+    height: 52px;
+    background-color: #FFFFFF;
+    color: #50D074;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 22px;
+}
+.cancel-button {
+    background-color: transparent;
+    border: transparent;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 700;
+}
+.confirm-order {
+    display: flex;
+}
+.itens div{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-bottom: 25px;
+}
